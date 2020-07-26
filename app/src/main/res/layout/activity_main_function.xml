@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFunction">
+
+    <ImageButton
+        android:id="@+id/imageButtonmap"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="42dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtoncalendar"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtoncalendar"
+        app:layout_constraintStart_toStartOf="@+id/imageButtoncalendar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/piceture2_foreground" />
+
+    <ImageButton
+        android:id="@+id/imageButtoncalendar"
+        android:layout_width="257dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonhelp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonmap"
+        app:srcCompat="@mipmap/piceture3_foreground" />
+
+    <ImageButton
+        android:id="@+id/imageButtonhelp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="39dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtoncalendar"
+        app:layout_constraintStart_toStartOf="@+id/imageButtoncalendar"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtoncalendar"
+        app:srcCompat="@mipmap/piceture4_foreground" />
+</androidx.constraintlayout.widget.ConstraintLayout>

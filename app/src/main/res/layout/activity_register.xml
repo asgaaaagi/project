@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register">
+
+    <TextView
+        android:id="@+id/textViewuserid2"
+        android:layout_width="160dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="22dp"
+        android:text="帳號:"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewuserpassword3"
+        app:layout_constraintEnd_toStartOf="@+id/todolist2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textViewuserpassword3"
+        android:layout_width="158dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="25dp"
+        android:text="密碼:"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewuseremail"
+        app:layout_constraintEnd_toStartOf="@+id/todolist3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewuserid2" />
+
+    <TextView
+        android:id="@+id/textViewuseremail"
+        android:layout_width="156dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="18dp"
+        android:text="信箱:"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintEnd_toStartOf="@+id/todolist4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewuserpassword3" />
+
+    <EditText
+        android:id="@+id/todolist2"
+        android:layout_width="225dp"
+        android:layout_height="71dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewuserid2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewuserid2"
+        app:layout_constraintTop_toTopOf="@+id/textViewuserid2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/todolist3"
+        android:layout_width="228dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewuserpassword3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewuserpassword3"
+        app:layout_constraintTop_toTopOf="@+id/textViewuserpassword3" />
+
+    <EditText
+        android:id="@+id/todolist4"
+        android:layout_width="221dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="26dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewuseremail"
+        app:layout_constraintTop_toBottomOf="@+id/textViewuserpassword3" />
+
+    <ImageButton
+        android:id="@+id/imageButtonregister"
+        android:layout_width="277dp"
+        android:layout_height="108dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewuseremail"
+        app:srcCompat="@mipmap/piceture6_foreground" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="354dp"
+        android:layout_height="163dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewuserid2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/piceture1_foreground" />
+</androidx.constraintlayout.widget.ConstraintLayout>

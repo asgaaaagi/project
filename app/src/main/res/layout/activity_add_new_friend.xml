@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addNewFriend">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="153dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="4dp"
+        android:text="加入好友"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="243dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="120dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="ID："
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="113dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="尋找"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/textview1"
+        android:layout_width="437dp"
+        android:layout_height="638dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="226dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

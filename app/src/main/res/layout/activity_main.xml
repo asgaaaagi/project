@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="365dp"
+        android:layout_height="279dp"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewuserid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/piceture1_foreground" />
+
+    <TextView
+        android:id="@+id/textViewuserid"
+        android:layout_width="161dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="9dp"
+        android:text="     帳號:"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewpassword"
+        app:layout_constraintEnd_toEndOf="@+id/textViewpassword"
+        app:layout_constraintStart_toStartOf="@+id/textViewpassword"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textViewpassword"
+        android:layout_width="163dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="26dp"
+        android:text="     密碼:"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonlogin"
+        app:layout_constraintEnd_toStartOf="@+id/buttonlogin"
+        app:layout_constraintStart_toStartOf="@+id/buttonlogin"
+        app:layout_constraintTop_toBottomOf="@+id/textViewuserid" />
+
+    <EditText
+        android:id="@+id/editTextaccount"
+        android:layout_width="0dp"
+        android:layout_height="81dp"
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewuserid"
+        app:layout_constraintEnd_toEndOf="@+id/editTextpassword"
+        app:layout_constraintStart_toStartOf="@+id/editTextpassword" />
+
+    <EditText
+        android:id="@+id/editTextpassword"
+        android:layout_width="184dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="19dp"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewpassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextaccount"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/buttonlogin"
+        android:layout_width="200dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginRight="96dp"
+        android:layout_marginBottom="47dp"
+        android:text="登入"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonforgotpassword"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/buttonregisiter" />
+
+    <Button
+        android:id="@+id/buttonforgotpassword"
+        android:layout_width="115dp"
+        android:layout_height="72dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="忘記"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonregisiter"
+        app:layout_constraintTop_toTopOf="@+id/buttonregisiter" />
+
+    <Button
+        android:id="@+id/buttonregisiter"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginRight="112dp"
+        android:layout_marginBottom="16dp"
+        android:text="註冊"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonforgotpassword"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
